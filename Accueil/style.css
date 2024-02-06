@@ -1,0 +1,518 @@
+/* ----------------------------- GENERAL ---------------------------------*/
+
+* {
+  margin: 0;
+  /* padding: 0; */
+  scrollbar-color: transparent transparent;
+  /* thumb and track color */
+ 
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  scrollbar-color: transparent transparent; /* Couleur transparente pour la barre de défilement et le curseur */
+  overflow-x: hidden; /* Masque la barre de défilement en largeur */
+}
+
+body::-webkit-scrollbar {
+  width: 12px; /* Largeur de la barre de défilement pour Chrome, Safari, et autres navigateurs basés sur WebKit */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Couleur transparente pour le curseur */
+}
+
+/* ----------------------------- Barre Nav ---------------------------------*/
+ /* Style du bouton "Accueil" */
+ .accueil-button {
+  background-color: #808080; /* Gris */
+  color: blue; /* Texte en bleu */
+  padding: 10px 20px; /* Espacement intérieur */
+  font-size: 24px; /* Taille de la police */
+  border-radius: 10px; /* Coins arrondis */
+  text-decoration: none; /* Suppression du soulignement du lien */
+  float: right; /* Alignement à droite */
+}
+
+
+
+
+
+
+
+/* <!-- menu du burger --> */
+.nav-link a {
+  text-decoration: none;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+#pop li a:hover {
+  color: #3e0610;
+  box-shadow: 0 1px 1px black;
+  padding: 5px;
+}
+
+.menupop {
+  z-index: 1000;
+  position: absolute;
+  top: 15px;
+  right: 0;
+  background-color: #fcce07;
+  width: 150px; /* Ajustez la largeur selon vos besoins */
+  padding: 10px;
+  border-radius: 20px;
+  transform: translateX(100%);
+  transition: 0.5s ease-out;
+}
+
+.menupop.closed {
+  transform: translateX(0);
+}
+
+.menupop li {
+  text-decoration: none;
+  font-family: 'Poppins', 'Arial Narrow', Arial, sans-serif;
+  color: white;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-top: 6px;
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+.menu-wrapper {
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-decoration: none;
+  position: absolute;
+  top: 24px;
+  left: 95%;
+}
+
+.burger-icon .line {
+  z-index: 1000;
+  width: 20px; /* Ajustez la largeur selon vos besoins */
+  height: 2px; /* Ajustez la hauteur selon vos besoins */
+  background-color: #ffffff;
+  margin: auto;
+  margin-top: 6px;
+}
+
+
+
+
+
+
+
+/* ----------------------------- Main ---------------------------------*/
+.banderole{
+  /* background-color: #ffd500; */
+  background-color: #ed1c24
+}
+
+
+header {
+  display: flex;
+  width: 100%;
+  height: 7em;
+  background-color: teal;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#logo {
+  width: 100px;
+  height: 85px;
+}
+
+.societe {
+  font-size: 2em;
+}
+
+.navlist {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navlist li {
+  list-style: none;
+  margin-left: 20px; /* Réduisez la marge pour les écrans plus petits */
+}
+
+.navlist li a {
+  text-decoration: none;
+  font-style: none;
+  text-transform: uppercase;
+}
+
+/* Media query pour les écrans de taille moyenne */
+@media (max-width: 1000px) {
+  header {
+    flex-direction: column; /* Changez la direction en colonne pour les écrans plus petits */
+    height: auto; /* Hauteur automatique pour s'adapter au contenu */
+    align-items: center;
+  }
+
+  .navlist {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navlist li {
+    margin: 10px 0;
+  }
+}
+/* ----------------------------- Articles/box0 ---------------------------------*/
+.pub {
+  font-size: 4em;
+  margin-left: 28%; /* Utilisation d'une unité relative pour le décalage à gauche */
+  font-family: Arial, sans-serif;
+  text-decoration: underline;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Appliquer ces styles lorsque la largeur de l'écran est de 768 pixels ou moins */
+  .pub {
+    font-size: 2.5em; /* Ajuster la taille de la police pour des écrans plus petits */
+    margin-left: 8%; /* Ajuster le décalage à gauche pour des écrans plus petits */
+  }
+}
+
+
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #ffd500;
+    flex-direction: column;
+  }
+
+  .responsive-image-container {
+    margin: 10px;
+    max-width: 100%;
+  }
+
+  .responsive-image {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+
+
+
+.AB {
+  display: flex;
+  justify-content: center;
+}
+
+.picto {
+  color: #008080;
+  position: relative;
+  text-align: center;
+  width: 14%; /* Ajustez selon vos besoins */
+  height: 15em;
+  background-color: blanchedalmond;
+  margin-top: 25px;
+  margin-left: 25px;
+  border-radius: 5px;
+}
+
+.ico1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  height: 40%;
+  margin-top: 10%;
+}
+
+/* Les AB, .picto et .ico1 passent en mode colonne et .picto occupe 80% de la largeur */
+@media (max-width: 500px) {
+  .AB {
+    flex-direction: column;
+    align-items: center; /* Ajustement pour centrer les éléments en mode colonne */
+  }
+
+  .picto {
+    width: 80%; /* Ajustez selon vos besoins */
+    margin-left: 0; /* Ajustez la marge gauche si nécessaire */
+    margin-top: 25px; /* Ajustez la marge supérieure si nécessaire */
+  }
+
+  .ico1 {
+    width: 35%; /* Conserve la dimension initiale */
+    height: 40%; /* Conserve la dimension initiale */
+    margin-top: 10%; /* Ajustez la marge supérieure si nécessaire */
+  }
+}
+
+.textpicto {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#bt2, #bt3, #bt4, #bt5, #bt6, #bt7, #bt8, #bt9 {
+  white-space: nowrap;
+  position: absolute;
+  bottom: -3mm;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ----------------------------- Articles/box2 ---------------------------------*/
+
+#bt2,
+#bt3,
+#bt4,
+#bt5,
+#bt6,
+#bt7,
+#bt8,
+#bt9 {
+  border-radius: 5px;
+  background-color: #ffd500;
+}
+
+#bt2:hover,
+#bt3:hover,
+#bt4:hover,
+#bt5:hover,
+#bt6:hover,
+#bt7:hover,
+#bt8:hover,
+#bt9:hover {
+  background-color: #ed1c24;
+}
+
+
+
+/* ----------------------------- Formulaire de message ---------------------------------*/
+/* Style du formulaire */
+.form  {
+  max-width: 450px;
+  margin: 5px auto;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: teal;
+  text-align: center; /* Centrage de la forme */
+}
+
+.form label {
+  display: block;
+  margin-bottom: 3px;
+}
+
+.form input[type="text"],
+.form input[type="password"],
+.form textarea {
+  width: calc(100% - 15px);
+  padding: 6px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  resize: none;
+  margin: 0 auto; /* Centrage horizontal */
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus,
+.form textarea:focus {
+  border-color: green;
+  outline: 2px solid green;
+}
+
+.form button {
+  padding: 8px 18px;
+  background-color: #ffd500;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: rgb(1, 88, 88);
+}
+
+.form button#Envoye {
+  margin-top: 8px;
+}
+
+.form div:last-child {
+  text-align: center;
+}
+
+
+
+/* ----------------------------- Footer ---------------------------------*/
+
+/* Styles du footer */
+footer {
+  background-color: #2C2C2C;
+  color: white;
+  /*padding: 0em 0; /* Réduisez l'espace en haut et en bas du footer */
+  text-align: center; /* Centrez le texte */
+  display: flex; /* Utilisez flexbox pour centrer verticalement et horizontalement */
+  justify-content: center;
+  align-items: center;
+  min-height: vh; /* Ajustez la hauteur minimale de la vue */
+}
+
+/* Styles des colonnes dans le footer */
+.ca {
+  display: flex; /* Utilisez flexbox pour aligner les éléments en ligne pour les grands écrans */
+  justify-content: space-around; /* Ajoutez un espacement entre les colonnes */
+  align-items: center; /* Centrez verticalement */
+  margin: 0px; /* Ajoutez une marge uniforme autour des divs */
+  max-width: 1000px; /* Ajoutez une largeur maximale pour centrer les colonnes */
+  width: 100%; /* Utilisez 100% de la largeur disponible */
+}
+
+/* Styles des colonnes pour les grands écrans */
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px; /* Augmentez l'espace entre les colonnes */
+}
+
+/* Styles des liens utiles et horaires d'ouverture */
+.txt_footer {
+  margin: 0px; /* Ajoutez une marge uniforme autour des textes */
+  font-size: 1.5rem;
+}
+
+.thins_txt {
+  font-weight: 100;
+  margin-top: 0; /* Réinitialisez la marge supérieure */
+}
+
+/* Media query pour les écrans de taille moyenne */
+@media (max-width: 1000px) {
+  .ca {
+    display: block; /* Passez à une disposition en bloc pour les écrans moyens */
+    text-align: center; /* Centrez le texte horizontalement */
+    margin: 0px auto; /* Réinitialisez la marge verticale et centrez horizontalement */
+  }
+
+  .column {
+    margin: 0px 0; /* Ajoutez une marge uniforme autour des colonnes */
+  }
+}
+
+
+
+
+/* -----------------------------Button click ---------------------------------*/ 
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.button-container button {
+  background-color: teal;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 10px 20px; 
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.button-container button:hover {
+  background-color: #3fed1c;
+}
+
+.button-container button a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 15px; /* Ajout d'une marge intérieure pour étendre la zone cliquable */
+  margin: -15px; /* Ajout d'une marge négative pour étendre la zone cliquable */
+}
+
+
+
+
+
+
+
+
+
+/* -----------------------------Pages de fichier BDD  ---------------------------------*/ 
+.ligne-rouge {
+  border-bottom: 2px solid #ed1c24;
+  width: 100%;
+  display: inline-block;
+}
+
+.titre_marge-gauche {
+  margin-left: 10px; /* Réduction de la marge à des tailles d'écran plus petites */
+}
+
+.titre_marge-droite {
+  margin-right: 10px; /* Réduction de la marge à des tailles d'écran plus petites */
+}
+
+/* Media Query pour ajuster les styles en fonction de la largeur de l'écran */
+@media screen and (min-width: 600px) {
+  .button-container {
+    padding: 20px; /* Augmentation de l'espace intérieur pour des écrans plus grands */
+  }
+
+  .button-container button {
+    width: auto; /* Rétablissement de la largeur automatique pour des écrans plus grands */
+  }
+
+  .titre_marge-gauche {
+    margin-left: 250px; /* Restauration de la marge à des tailles d'écran plus grandes */
+  }
+
+  .titre_marge-droite {
+    margin-right: 50px; /* Restauration de la marge à des tailles d'écran plus grandes */
+  }
+}
+
+
+/* -----------------------------P ---------------------------------*/
